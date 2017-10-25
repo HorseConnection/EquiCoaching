@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">EquiCoaching</string>
+    <string name="app_name_EC">EquiCoaching</string>
+    <string name="module_EF">EquiFoulées</string>
 </resources>

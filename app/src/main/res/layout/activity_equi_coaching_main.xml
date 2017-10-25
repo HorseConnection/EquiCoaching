@@ -17,20 +17,46 @@
         android:maxHeight="300dp"
         android:maxWidth="300dp"
         android:scaleType="fitCenter"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imgequicoaching" />
 
     <ImageButton
         android:id="@+id/btnEquiFoulees"
-        android:layout_width="152dp"
-        android:layout_height="133dp"
-        android:layout_marginLeft="40dp"
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
         android:clickable="true"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/icequifoulees" />
+        app:srcCompat="@mipmap/btnequifoulees" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/module_EF"
+        android:textColor="@color/txt"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/btnEquiFoulees" />
 
 </android.support.constraint.ConstraintLayout>
