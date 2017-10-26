@@ -20,19 +20,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/guideline"
         app:layout_constraintRight_toLeftOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imgequicoaching" />
-
-    <ImageButton
-        android:id="@+id/btnEquiFoulees"
-        android:layout_width="71dp"
-        android:layout_height="68dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/transparent"
-        android:clickable="true"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@mipmap/btnequifoulees" />
+        app:srcCompat="@drawable/imgequicoaching1" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -48,15 +36,14 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="20dp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="0dp"
-        android:text="@string/module_EF"
-        android:textColor="@color/txt"
+    <ImageView
+        android:id="@+id/imEquiFoulees"
+        android:layout_width="151dp"
+        android:layout_height="135dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/btnEquiFoulees" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/imgequifoulees" />
 
 </android.support.constraint.ConstraintLayout>

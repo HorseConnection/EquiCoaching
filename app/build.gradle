@@ -1,13 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        EquiCoachingKeys {
+            keyAlias 'EquiFoulees'
+            keyPassword 'f1mny919410'
+            storeFile file('G:/Personnel/Android/KeyStore.jks')
+            storePassword 'f1mny919410'
+        }
+    }
     compileSdkVersion project.ext.ANDROID_BUILD_SDK_VERSION
     buildToolsVersion project.ext.ANDROID_BUILD_TOOLS_VERSION
     defaultConfig {
         applicationId "com.horse_connection.coaching.equicoaching"
         minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION
         targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION
-        versionCode 5
+        versionCode 6
         versionName "1.2"
         // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -15,6 +23,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.EquiCoachingKeys
         }
     }
 }
